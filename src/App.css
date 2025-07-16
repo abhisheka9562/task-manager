@@ -1,0 +1,37 @@
+.task-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.task-card.overdue {
+  background-color: #ffe6e6; /* Light red for overdue tasks */
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-card input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-card button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #c00;
+}
+
+.task-card button:hover {
+  color: #900;
+}
